@@ -1,8 +1,8 @@
 .App {
   text-align: center;
-  background-image: url(../public/assets/nolan-issac-K5sjajgbTFw-unsplash.jpg);
+  background-image: url(assets/TravelByMail_WebBG_Large.png);
   background-color: rgb(222, 205, 171);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
 }
 
@@ -18,14 +18,15 @@
 }
 
 .App-header {
-  /* background-color: #282c34; */
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: rgba(38, 38, 38, 0.854);
+  color: #ffffff;
+  font-family: "Lato";
+  position: relative;
 }
 
 .App-link {
@@ -39,4 +40,28 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.header-text{
+  font-size: calc(1.5vw + 1.5vh);
+  letter-spacing: 0.15em;
+  margin-top: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-bottom: .5rem;
+}
+
+.logo-central {
+  width: 40%;
+  height: auto; /* This will maintain the aspect ratio */
+}
+
+.logo-corner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(60%, -105%);
+  width: 15%;
+  height: auto;
+  z-index: 1;
 }
